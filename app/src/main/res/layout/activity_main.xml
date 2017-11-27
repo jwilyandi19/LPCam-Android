@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jasonwilyandi.lpcamandroid.MainActivity">
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.jasonwilyandi.lpcamandroid.MainActivity"
+    tools:ignore="ContentDescription">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/btnCamera"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/oval"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <!--ImageButton
+        android:id="@+id/saveFTP"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnCamera"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:background="@drawable/oval"
+        android:src="@android:drawable/ic_dialog_email" /-->
+    <!--<Button-->
+    <!--android:id="@+id/saveFTP"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:background="@android:color/holo_red_dark"-->
+    <!--android:text="@string/saveFTP"-->
+    <!--android:textColor="@android:color/white" />-->
+
+
+
+</RelativeLayout>
