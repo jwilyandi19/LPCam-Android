@@ -28,7 +28,6 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private ImageView imageView;
     ImageButton btnCamera,saveFTP;
-    private ConnDetect cd;
     private Boolean upflag = false;
     private Uri selectedImage = null;
     private Bitmap bitmap,bitmapRotate;
