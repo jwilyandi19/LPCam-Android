@@ -41,11 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //dari line ini sampe selesai cuma buat inisiasi
-        cd = new ConnDetect(MainActivity.this);
 
         btnCamera = (ImageButton) findViewById(R.id.btnCamera);
         imageView = (ImageView)findViewById(R.id.imageView);
-        cd = new ConnDetect(getApplicationContext());
         btnCamera.setOnClickListener(this);
     }
 
